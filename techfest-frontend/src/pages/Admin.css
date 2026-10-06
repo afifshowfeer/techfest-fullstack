@@ -1,0 +1,29 @@
+.admin-page { padding:2rem; background:#0f3460; min-height:calc(100vh - 60px); color:#eee; }
+.admin-page h1 { color:#e94560; text-align:center; margin-bottom:1rem; }
+.admin-tabs { display:flex; gap:.5rem; justify-content:center; margin-bottom:1.5rem; }
+.admin-tabs button { padding:.5rem 1.5rem; border:1px solid #e94560; background:transparent; color:#e94560; border-radius:20px; cursor:pointer; }
+.admin-tabs button.active { background:#e94560; color:white; }
+.event-form { background:#16213e; padding:1.5rem; border-radius:10px; margin-bottom:2rem; box-shadow:0 2px 12px rgba(0,0,0,.4); }
+.event-form h2 { color:#e94560; margin-bottom:1rem; }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:.8rem; margin-bottom:.8rem; }
+@media(max-width:600px){ .form-grid{ grid-template-columns:1fr; } }
+.event-form label { font-size:.8rem; color:#aaa; display:block; margin-bottom:.2rem; }
+.event-form input,.event-form select,.event-form textarea { width:100%; padding:.55rem .8rem; background:#0f3460; border:1px solid #333; color:#eee; border-radius:5px; font-size:.9rem; box-sizing:border-box; }
+.event-form input:focus,.event-form select:focus,.event-form textarea:focus { border-color:#e94560; outline:none; }
+.form-actions { display:flex; gap:.8rem; margin-top:1rem; }
+.form-actions button { padding:.6rem 1.4rem; border:none; border-radius:5px; cursor:pointer; font-size:.95rem; }
+.form-actions button[type="submit"] { background:#e94560; color:white; }
+.form-actions button[type="button"] { background:#333; color:#eee; }
+.admin-table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; background:#16213e; border-radius:10px; overflow:hidden; }
+thead { background:#1a1a2e; }
+th,td { padding:.75rem 1rem; text-align:left; font-size:.9rem; border-bottom:1px solid #0f3460; }
+th { color:#e94560; } td { color:#ccc; }
+tr:hover td { background:#1a1a2e; }
+.btn-edit { background:#f0a500; color:#000; border:none; padding:.3rem .7rem; border-radius:4px; cursor:pointer; margin-right:.4rem; }
+.btn-del  { background:#e94560; color:white; border:none; padding:.3rem .7rem; border-radius:4px; cursor:pointer; }
+.status.confirmed { color:#6bff8e; } .status.cancelled { color:#ff6b6b; }
+.msg { padding:.7rem 1rem; border-radius:6px; margin-bottom:1rem; text-align:center; }
+.msg.success { background:#0a3d16; color:#6bff8e; }
+.msg.error   { background:#3d0a0a; color:#ff6b6b; }
+

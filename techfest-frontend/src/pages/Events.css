@@ -1,0 +1,34 @@
+.events-page { padding:2rem; background:#0f3460; min-height:calc(100vh - 60px); color:#eee; }
+.events-page h1 { text-align:center; color:#e94560; margin-bottom:1.5rem; }
+.category-filter { display:flex; flex-wrap:wrap; justify-content:center; gap:.6rem; margin-bottom:1.5rem; }
+.category-filter button { padding:.4rem 1rem; border:1px solid #e94560; background:transparent; color:#e94560; border-radius:20px; cursor:pointer; font-size:.85rem; transition:.2s; }
+.category-filter button:hover,.category-filter button.active { background:#e94560; color:white; }
+.events-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem; }
+.event-card { background:#16213e; border-radius:10px; padding:1.4rem; display:flex; flex-direction:column; gap:.6rem; box-shadow:0 2px 12px rgba(0,0,0,.4); transition:transform .2s; }
+.event-card:hover { transform:translateY(-4px); }
+.badge { align-self:flex-start; padding:.2rem .6rem; border-radius:12px; font-size:.75rem; font-weight:600; background:#e94560; color:white; }
+.event-card h3 { margin:0; font-size:1.1rem; color:#fff; }
+.desc { font-size:.85rem; color:#aaa; }
+.event-meta { display:flex; flex-direction:column; gap:.3rem; font-size:.85rem; color:#ccc; }
+.event-meta .full { color:#ff6b6b; }
+.btn-reg { margin-top:auto; padding:.6rem; background:#e94560; color:white; border:none; border-radius:6px; cursor:pointer; font-size:.95rem; }
+.btn-reg:disabled { background:#555; cursor:not-allowed; }
+.btn-reg:hover:not(:disabled) { background:#c73650; }
+.btn-registered {
+  margin-top: auto;
+  padding: 0.6rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: default;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.login-hint { font-size:.8rem; color:#888; text-align:center; }
+.center { text-align:center; color:#aaa; padding:2rem; }
+.error-text { color:#ff6b6b; }
+.msg { padding:.7rem 1rem; border-radius:6px; margin-bottom:1rem; text-align:center; }
+.msg.success { background:#0a3d16; color:#6bff8e; }
+.msg.error   { background:#3d0a0a; color:#ff6b6b; }
+
